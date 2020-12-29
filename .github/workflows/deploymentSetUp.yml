@@ -34,7 +34,7 @@ jobs:
           
           
       - name: Run Build
-        run : npm build     
+        run : npm run build     
           
       - name : Install 
         run : npm install --global surge
