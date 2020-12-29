@@ -29,14 +29,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           
-      - name : Install yarn pkg  
-        uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: install # will run `yarn install` command
+      - name : Install npm pkg  
+        run: npm install
           
           
       - name: Run Build
-        run : yarn build     
+        run : npm build     
           
       - name : Install 
         run : npm install --global surge
