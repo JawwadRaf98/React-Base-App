@@ -39,7 +39,7 @@ jobs:
         run : yarn build     
           
       - name : Install 
-         run : npm install --global surge
+        run : npm install --global surge
       
       - name : deploy surge
         run : surge ./build jawwad-react-base-app.surge.sh --token ${{secrets.SURGE_TOKEN}}
